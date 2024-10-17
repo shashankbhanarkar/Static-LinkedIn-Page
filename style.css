@@ -1,0 +1,797 @@
+/* General body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f3f2ef; /* Light background color */
+}
+
+/* ---------------Header Section--------------- */
+
+/* Header container styles */
+header {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically */
+    background-color: #fff; /* White background for header */
+    padding: 0 12%; /* Horizontal padding for spacing */
+}
+
+/* Left section of the header */
+.header-left {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items vertically */
+    position: relative; /* For positioning child elements */
+}
+
+/* Logo image styling in the left section */
+.header-left img {
+    width: 41px; /* Fixed width for the logo */
+    height: 41px; /* Fixed height for the logo */
+    margin-right: 7px; /* Space between logo and search input */
+}
+
+/* Search input box styling */
+.header-left #search {
+    border: none; /* Removes border */
+    box-shadow: none; /* Removes shadow */
+    padding: 0 40px; /* Horizontal padding inside the input */
+    width: 100%; /* Full width of parent container */
+    height: 41px; /* Fixed height */
+    background-color: #edf3f8; /* Light background color */
+    font-size: 14px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 1.75; /* Line height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Search icon inside the left section */
+.header-left i {
+    position: absolute; /* Positioning icon inside the search box */
+    left: 60px; /* Position from the left */
+}
+
+/* Right section of the header */
+.header-right {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items vertically */
+    position: relative; /* For positioning child elements */
+}
+
+/* Navigation list styling */
+.header-right ul {
+    display: flex; /* Uses flexbox for layout */
+    border-right: 1px solid #000; /* Right border */
+}
+
+/* List items in the navigation */
+.header-right ul li {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Vertical alignment of text */
+    justify-content: center; /* Centering text vertically */
+    align-items: center; /* Centering text horizontally */
+    margin: 0 20px; /* Horizontal margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #00000099; /* Light black color */
+}
+
+/* Hover effect for navigation list items */
+.header-right ul li:hover {
+    border-bottom: 2px solid #000; /* Bottom border on hover */
+    color: #000; /* Darker color on hover */
+}
+
+/* Links inside the navigation list items */
+.header-right ul li a {
+    font-size: small; /* Small font size */
+    padding-top: 5px; /* Space above the text */
+    text-decoration: none; /* Removes underline */
+    color: #00000099; /* Light black color */
+}
+
+/* Hover effect for navigation links */
+.header-right ul li a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+/* Icon styles in the right section */
+.header-right i {
+    color: #00000099; /* Light black color */
+    font-size: x-large; /* Extra-large font size */
+}
+
+/* Hover effect for icons in the right section */
+.header-right i:hover {
+    color: #000; /* Darker color on hover */
+}
+
+/* Notification badge container */
+.notification-container {
+    position: relative; /* For positioning the badge */
+    display: inline-block; /* Inline block for positioning */
+}
+
+/* Notification badge styling */
+.notification-badge {
+    position: absolute; /* Absolute positioning */
+    top: -4px; /* Position from the top */
+    right: 18px; /* Position from the right */
+    background-color: red; /* Red background for badge */
+    color: white; /* White text color */
+    border-radius: 50%; /* Circular shape */
+    padding: 2px 5px; /* Padding inside the badge */
+    font-size: 12px; /* Font size */
+    font-weight: bold; /* Bold text */
+    line-height: 1; /* Line height */
+}
+
+/* Image styles in the right section */
+.header-right img {
+    width: 24px; /* Fixed width */
+    padding-left: 10px; /* Space between images */
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Arrow icon styling in the right section */
+.header-right .arrow {
+    font-size: large; /* Large font size */
+    position: absolute; /* Absolute positioning */
+    right: 180px; /* Position from the right */
+    top: 43px; /* Position from the top */
+}
+
+/* Paragraph styling in the right section */
+.header-right p {
+    text-align: center; /* Center-aligned text */
+    width: 167px; /* Fixed width */
+    font-size: small; /* Small font size */
+}
+
+/* ---------------Main Section--------------- */
+/* Main section layout */
+.main-section {
+    padding: 0 12%; /* Horizontal padding */
+    display: grid; /* Uses grid layout */
+    grid-template-columns: 1fr 2fr 1fr; /* Defines three columns with a ratio of 1:2:1 */
+    grid-gap: 23px; /* Space between grid items */
+    margin-top: 23px; /* Space above the main section */
+}
+
+/* Styling for the left panel */
+.left-panel {
+    border-radius: 10px; /* Rounded corners */
+    position: relative; /* For absolute positioning of child elements */
+}
+
+/* Styling for the first section in the left panel */
+.left-panel .section-1 {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 12px; /* Space below the section */
+}
+
+/* Profile section inside the first section */
+.left-panel .section-1 .profile-section {
+    text-align: center; /* Center-aligns text and images */
+}
+
+/* Gradient bar at the top of the first section */
+.left-panel .section-1::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Positioned absolutely within the section */
+    background-image: linear-gradient(to right, #a47f7f,#f77c7c); /* Gradient background */
+    width: 100%; /* Full width of the section */
+    height: 6%; /* Height of the gradient bar */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+/* Profile image inside the profile section */
+.left-panel .section-1 .profile-section img {
+    width: 72px; /* Fixed width for the image */
+    margin-top: 13%; /* Space above the image */
+    border-radius: 50%; /* Circular image */
+    position: relative; /* Positioned relative to its container */
+}
+
+/* Username styling in the profile section */
+.left-panel .section-1 .profile-section .username {
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Vertical margin */
+}
+
+/* User skill styling in the profile section */
+.left-panel .section-1 .profile-section .userSkill {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+    border-bottom: 1px solid #00000099; /* Bottom border */
+    padding-bottom: 17px; /* Space below the text */
+}
+
+/* Information section 1 inside the first section */
+.left-panel .section-1 .Information-1 {
+    padding: 10px; /* Padding inside the section */
+    border-bottom: 1px solid #000; /* Bottom border */
+}
+
+/* Layout for information items in Information-1 */
+.left-panel .section-1 .Information-1 .Info-1 {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+}
+
+/* Connection text styling */
+.left-panel .section-1 .Information-1 .Info-1 .connection {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Number text styling */
+.left-panel .section-1 .Information-1 .Info-1 .number {
+    color: blue; /* Blue color */
+}
+
+/* Growth text styling */
+.left-panel .section-1 .Information-1 .growth {
+    font-weight: bold; /* Bold text */
+    font-size: small; /* Small font size */
+}
+
+/* Layout for information items in Information-2 */
+.left-panel .section-1 .Information-1 .Info-2 {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    margin-top: 13px; /* Space above the item */
+}
+
+/* Number text styling in Information-2 */
+.left-panel .section-1 .Information-1 .Info-2 .number {
+    color: blue; /* Blue color */
+}
+
+/* Information section 2 inside the first section */
+.left-panel .section-1 .Information-2 {
+    padding: 10px; /* Padding inside the section */
+    border-bottom: 1px solid #000; /* Bottom border */
+}
+
+/* Tools text styling in Information-2 */
+.left-panel .section-1 .Information-2 .tools {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Premium text styling in Information-2 */
+.left-panel .section-1 .Information-2 .premium {
+    font-size: 14px; /* Slightly larger font size */
+}
+
+/* Styling for items in the first section */
+.left-panel .section-1 .myItem {
+    padding: 10px; /* Padding inside the section */
+}
+
+/* Spacing for spans in the myItem section */
+.left-panel .section-1 .myItem span {
+    margin-left: 10px; /* Space to the left of the span */
+}
+
+/* Styling for the second section in the left panel */
+.left-panel .section-2 {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 12px; /* Space below the section */
+    padding: 10px; /* Padding inside the section */
+    font-size: small; /* Small font size */
+    color: #00000099; /* Light black color */
+}
+
+/* Recent text styling in the second section */
+.left-panel .section-2 .recent {
+    color: #000; /* Dark color */
+    padding: 10px 0; /* Vertical padding */
+}
+
+/* TensorFlow section styling */
+.left-panel .section-2 .tensorflow div {
+    margin: 7px 0; /* Vertical margin */
+}
+
+/* Group text styling */
+.left-panel .section-2 .group {
+    color: blue; /* Blue color */
+    margin: 10px 0; /* Vertical margin */
+}
+
+/* TensorFlow icon styling */
+.left-panel .section-2 .tensorflow i {
+    margin-right: 10px; /* Space to the right of the icon */
+}
+
+/* Hashtag text styling */
+.left-panel .section-2 .hashtag {
+    color: blue; /* Blue color */
+    margin: 10px 0; /* Vertical margin */
+}
+
+/* Middle panel layout */
+.middle-panel {
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 23px; /* Space between items */
+}
+/* Styling for section 1 in the middle panel */
+.middle-panel .section-1 {
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the section */
+}
+
+/* Layout for profile posts in section 1 */
+.middle-panel .section-1 .profilePost {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 7px; /* Space below the profile post */
+}
+
+/* Styling for images in section 1 */
+.middle-panel .section-1 img {
+    width: 48px; /* Fixed width */
+    margin: 0 8px 0 0; /* Space to the right of the image */
+    border-radius: 50%; /* Circular image */
+}
+
+/* Search input styling in section 1 */
+.middle-panel .section-1 .search {
+    border-radius: 22px; /* Rounded corners */
+    width: 100%; /* Full width of the container */
+    padding: 13px 16px; /* Padding inside the input */
+    border: 1px solid #00000099; /* Light border */
+}
+
+/* Layout for post icons in section 1 */
+.middle-panel .section-1 .postIcons {
+    display: flex; /* Uses flexbox layout */
+    flex-wrap: wrap; /* Wraps items onto multiple lines */
+    justify-content: space-around; /* Distributes space evenly */
+}
+
+/* Styling for buttons inside postIcons */
+.middle-panel .section-1 .postIcons button {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    border: none; /* Removes border */
+    padding: 12px 7px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #fff; /* White background */
+}
+
+/* Hover effect for post icons buttons */
+.middle-panel .section-1 .postIcons button:hover {
+    background-color: #f3f2ef; /* Light background on hover */
+}
+
+/* Styling for images inside post icons buttons */
+.middle-panel .section-1 .postIcons button img {
+    max-width: 24px; /* Maximum width */
+    height: 24px; /* Fixed height */
+}
+
+/* Styling for section 2 in the middle panel */
+.middle-panel .section-2 {
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Layout for user posts in section 2 */
+.middle-panel .section-2 .User-post {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 10px; /* Padding inside the user post */
+}
+
+/* Layout for profile info in user posts */
+.middle-panel .section-2 .User-post .Profile-Info {
+    display: flex; /* Uses flexbox layout */
+}
+
+/* Styling for profile images in user posts */
+.middle-panel .section-2 .User-post .Profile-Info img {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    margin-right: 10px; /* Space to the right of the image */
+}
+
+/* Styling for names in profile info */
+.middle-panel .section-2 .Profile-Info .myntra-name {
+    font-weight: bold; /* Bold text */
+}
+
+/* Styling for follower count and promoted status */
+.middle-panel .section-2 .Profile-Info .followers,
+.middle-panel .section-2 .Profile-Info .promoted {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Icon styling in section 2 */
+.middle-panel .section-2 i {
+    font-size: large; /* Large font size */
+}
+
+/* Styling for post content in section 2 */
+.middle-panel .section-2 .myntra-post {
+    width: 100%; /* Full width of the container */
+}
+
+/* Layout for emojis in section 2 */
+.middle-panel .section-2 .emojis {
+    display: flex; /* Uses flexbox layout */
+    padding: 8px; /* Padding inside the emojis section */
+    border-bottom: 1px solid #86787899; /* Bottom border */
+}
+
+/* Styling for emoji images */
+.middle-panel .section-2 .emojis img {
+    width: 16px; /* Fixed width */
+}
+
+/* Styling for emoji text */
+.middle-panel .section-2 .emojis span {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+    padding-left: 10px; /* Space to the left of the text */
+}
+
+/* Layout for like and comment sections */
+.middle-panel .section-2 .like-commnets {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Styling for like and comment divs */
+.middle-panel .section-2 .like-commnets div {
+    margin: 10px 2px; /* Margins around the divs */
+    min-height: 40px; /* Minimum height */
+    padding: 0 12px; /* Horizontal padding */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for like and comment divs */
+.middle-panel .section-2 .like-commnets div:hover {
+    background-color: #f3f2ef; /* Light background on hover */
+}
+
+/* Spacing for icons inside like and comment divs */
+.middle-panel .section-2 .like-commnets div i {
+    margin-right: 7px; /* Space to the right of the icon */
+}
+
+/* Duplicate styling for user posts, possibly redundant */
+.middle-panel .section-2 .User-post {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 10px; /* Padding inside the user post */
+}
+
+/* Duplicate styling for profile info, possibly redundant */
+.middle-panel .section-2 .User-post .Profile-Info {
+    display: flex; /* Uses flexbox layout */
+}
+
+/* Duplicate styling for profile images, possibly redundant */
+.middle-panel .section-2 .User-post .Profile-Info img {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    margin-right: 10px; /* Space to the right of the image */
+}
+
+/* Duplicate styling for names in profile info, possibly redundant */
+.middle-panel .section-2 .Profile-Info .myntra-name {
+    font-weight: bold; /* Bold text */
+}
+/* Styling for followers in section 2 */
+.middle-panel .section-2 .Profile-Info .followers {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Styling for promoted status in section 2 */
+.middle-panel .section-2 .Profile-Info .promoted {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Styling for icons in section 2 */
+.middle-panel .section-2 i {
+    font-size: large; /* Large font size */
+}
+
+/* Styling for post content in section 2 */
+.middle-panel .section-2 .myntra-post {
+    width: 100%; /* Full width of the container */
+}
+
+/* Layout for emojis in section 2 */
+.middle-panel .section-2 .emojis {
+    display: flex; /* Uses flexbox layout */
+    padding: 8px; /* Padding inside the emojis section */
+    border-bottom: 1px solid #86787899; /* Bottom border */
+}
+
+/* Styling for emoji images */
+.middle-panel .section-2 .emojis img {
+    width: 16px; /* Fixed width */
+}
+
+/* Styling for emoji text */
+.middle-panel .section-2 .emojis span {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+    padding-left: 10px; /* Space to the left of the text */
+}
+
+/* Layout for like and comment sections in section 2 */
+.middle-panel .section-2 .like-commnets {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Styling for like and comment divs in section 2 */
+.middle-panel .section-2 .like-commnets div {
+    margin: 10px 2px; /* Margins around the divs */
+    min-height: 40px; /* Minimum height */
+    padding: 0 12px; /* Horizontal padding */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for like and comment divs in section 2 */
+.middle-panel .section-2 .like-commnets div:hover {
+    background-color: #f3f2ef; /* Light background on hover */
+}
+
+/* Spacing for icons inside like and comment divs */
+.middle-panel .section-2 .like-commnets div i {
+    margin-right: 7px; /* Space to the right of the icon */
+}
+
+/* Styling for section 3 in the middle panel */
+.middle-panel .section-3 {
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Layout for user posts in section 3 */
+.middle-panel .section-3 .User-post {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 10px; /* Padding inside the user post */
+}
+
+/* Layout for profile info in user posts in section 3 */
+.middle-panel .section-3 .User-post .Profile-Info {
+    display: flex; /* Uses flexbox layout */
+}
+
+/* Styling for profile images in user posts in section 3 */
+.middle-panel .section-3 .User-post .Profile-Info img {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    margin-right: 10px; /* Space to the right of the image */
+}
+
+/* Styling for names in profile info in section 3 */
+.middle-panel .section-3 .Profile-Info .myntra-name {
+    font-weight: bold; /* Bold text */
+}
+
+/* Styling for followers in profile info in section 3 */
+.middle-panel .section-3 .Profile-Info .followers {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Styling for promoted status in profile info in section 3 */
+.middle-panel .section-3 .Profile-Info .promoted {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Styling for icons in section 3 */
+.middle-panel .section-3 i {
+    font-size: large; /* Large font size */
+}
+
+/* Styling for post information in section 3 */
+.middle-panel .section-3 .post-info {
+    padding: 10px; /* Padding inside the post info */
+    text-align: justify; /* Justified text alignment */
+}
+
+/* Styling for post content in section 3 */
+.middle-panel .section-3 .myntra-post {
+    width: 100%; /* Full width of the container */
+}
+
+/* Layout for emojis in section 3 */
+.middle-panel .section-3 .emojis {
+    display: flex; /* Uses flexbox layout */
+    padding: 8px; /* Padding inside the emojis section */
+    border-bottom: 1px solid #86787899; /* Bottom border */
+}
+
+/* Styling for emoji images in section 3 */
+.middle-panel .section-3 .emojis img {
+    width: 16px; /* Fixed width */
+}
+
+/* Styling for emoji text in section 3 */
+.middle-panel .section-3 .emojis span {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+    padding-left: 10px; /* Space to the left of the text */
+}
+
+/* Layout for like and comment sections in section 3 */
+.middle-panel .section-3 .like-commnets {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+}
+/* Styling for like and comment sections in section 3 */
+.middle-panel .section-3 .like-commnets div {
+    margin: 10px 2px; /* Margins around the divs */
+    min-height: 40px; /* Minimum height */
+    padding: 0 12px; /* Horizontal padding */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for like and comment divs in section 3 */
+.middle-panel .section-3 .like-commnets div:hover {
+    background-color: #f3f2ef; /* Light background on hover */
+}
+
+/* Spacing for icons inside like and comment divs in section 3 */
+.middle-panel .section-3 .like-commnets div i {
+    margin-right: 7px; /* Space to the right of the icon */
+}
+
+/* Styling for the right panel container */
+.right-panel {
+    width: 317px; /* Fixed width */
+}
+
+/* Styling for section 1 in the right panel */
+.right-panel .section-1 {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 12px; /* Space below each section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside the section */
+}
+
+/* Layout for notifications in section 1 of the right panel */
+.right-panel .notifications {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space between items */
+}
+
+/* Styling for news heading in section 1 of the right panel */
+.right-panel .news-heading {
+    font-size: large; /* Large font size */
+    font-weight: bold; /* Bold text */
+    padding-bottom: 25px; /* Space below the heading */
+}
+
+/* Styling for news list in section 1 of the right panel */
+.right-panel .news-list {
+    list-style-type: none; /* No bullet points */
+    list-style-position: inside; /* Bullet points inside the list */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+/* Styling for individual news items in section 1 of the right panel */
+.right-panel .news-item {
+    margin-bottom: 10px; /* Space below each news item */
+    position: relative; /* Positioned relative for ::before content */
+    padding-left: 30px; /* Space to the left for bullet points */
+}
+
+/* Styling for bullet points before news items */
+.right-panel .news-item::before {
+    content: "•"; /* Bullet point */
+    color: #000; /* Black color */
+    font-size: 37px; /* Large font size for the bullet point */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Align to the left */
+    bottom: 10; /* Space from the bottom */
+}
+
+/* Styling for news information text */
+.right-panel .news-item .news-Info {
+    font-weight: bold; /* Bold text */
+}
+
+/* Styling for news timestamps */
+.right-panel .news-item .news-timestamp {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+}
+
+/* Styling for section 2 in the right panel */
+.right-panel .section-2 {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 12px; /* Space below each section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside the section */
+}
+
+/* Styling for section 3 in the right panel */
+.right-panel .section-3 {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 12px; /* Space below each section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px; /* Padding inside the section */
+}
+
+/* Layout for the 'your feed' section in section 3 of the right panel */
+.right-panel .section-3 .your-feed {
+    display: flex; /* Uses flexbox layout */
+    padding: 12px 0; /* Vertical padding */
+    border-bottom: 1px solid #86787899; /* Bottom border */
+}
+
+/* Styling for logos in the 'your feed' section */
+.right-panel .section-3 .your-feed .unilever-logo img {
+    width: 48px; /* Fixed width */
+}
+
+/* Styling for logo information in the 'your feed' section */
+.right-panel .section-3 .logo-Info {
+    margin-left: 7px; /* Space to the left of the logo */
+}
+
+/* Styling for company name in the 'your feed' section */
+.right-panel .section-3 .logo-name {
+    font-weight: bold; /* Bold text */
+    margin-bottom: 5px; /* Space below the company name */
+}
+
+/* Styling for company info in the 'your feed' section */
+.right-panel .section-3 .company-Info {
+    color: #00000099; /* Light black color */
+    font-size: small; /* Small font size */
+    margin-bottom: 5px; /* Space below the company info */
+}
+
+/* Styling for buttons in the 'your feed' section */
+.right-panel .section-3 .logo-Info button {
+    padding: 10px; /* Padding inside the button */
+    width: 100%; /* Full width of the container */
+    border-radius: 20px; /* Rounded corners */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Bold text */
+    line-height: 12px; /* Line height */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons in the 'your feed' section */
+.right-panel .section-3 .logo-Info button:hover {
+    background-color: #f3f2ef; /* Light background on hover */
+}

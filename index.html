@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static LinkedIn Page</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to FontAwesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/e88ccfc67d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Left side of the header, including the LinkedIn logo and search bar -->
+      <div class="header-left">
+        <img
+          src="./Images/LinkedIn_logo.webp"
+          alt="LinkedIn Logo"
+          class="linkedIn-logo"
+        />
+        <input type="search" id="search" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- Right side of the header, including navigation links and profile info -->
+      <div class="header-right">
+        <ul>
+          <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+          <li>
+            <i class="fa-solid fa-user-group"></i><a href="#">My Network</a>
+          </li>
+          <li><i class="fa-solid fa-bag-shopping"></i><a href="#">Jobs</a></li>
+          <li class="notification-container">
+            <i class="fa-solid fa-comment-dots"></i>
+            <!-- Notification icons with badges -->
+            <span class="notification-badge">3</span>
+            <a href="#">Messaging</a>
+          </li>
+          <li class="notification-container">
+            <i class="fa-solid fa-bell"></i>
+            <!-- Notification icons with badges -->
+            <span class="notification-badge">3</span>
+            <a href="#">Notifications</a>
+          </li>
+        </ul>
+        <!-- Profile image and dropdown arrow -->
+        <img src="./Images/profile_logo.jpg" alt="Profile Logo" />
+        <i class="fa-solid fa-sort-down arrow"></i>
+        <p>Try Premium Free for 1 Month</p>
+      </div>
+    </header>
+
+    <!-- Main content section -->
+    <main class="main-section">
+      <!-- Left panel with profile information and shortcuts -->
+      <div class="left-panel">
+        <section class="section-1">
+          <!-- Profile section -->
+          <div class="profile-section">
+            <img src="./Images/profile_logo.jpg" alt="Profile Logo" />
+            <div class="username">Shashank Bhanarkar</div>
+            <div class="userSkill">Technical Trainer At Skill Academy</div>
+          </div>
+          <!-- Connection and profile view information -->
+          <div class="Information-1">
+            <div class="Info-1">
+              <span class="connection">connections</span
+              ><span class="number">30</span>
+            </div>
+            <div class="growth">Grow your network</div>
+            <div class="Info-2">
+              <span class="viewProfile">Who viewed your profile</span
+              ><span class="number">30</span>
+            </div>
+          </div>
+          <!-- Premium tools and shortcuts -->
+          <div class="Information-2">
+            <div class="tools">Access exclusive tools and sights</div>
+            <div class="premium">Try premium for one month</div>
+          </div>
+          <div class="myItem">
+            <i class="fa-solid fa-bookmark"></i><span>My items</span>
+          </div>
+        </section>
+        <!-- Recent activities and followed hashtags -->
+        <section class="section-2">
+          <div class="recent">Recent</div>
+          <div class="tensorflow">
+            <div># Tensorflow</div>
+            <div># Tensorflow</div>
+            <div># Tensorflow</div>
+            <div># Tensorflow</div>
+            <div># Tensorflow</div>
+          </div>
+          <div class="group">Group</div>
+          <div class="tensorflow">
+            <div><i class="fa-solid fa-user-group"></i>Tenserflow</div>
+            <div><i class="fa-solid fa-user-group"></i>Tenserflow</div>
+          </div>
+          <div class="hashtag">Followed Hashtags</div>
+          <div class="tensorflow">
+            <div># Tenserflow</div>
+            <div># Tenserflow</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Middle panel with posts and updates -->
+      <div class="middle-panel">
+        <!-- Section for creating a new post -->
+        <div class="section-1">
+          <div class="profilePost">
+            <img src="./Images/profile_logo.jpg" alt="Profile Logo" />
+            <input type="search" class="search" placeholder="start a post" />
+          </div>
+          <!-- Icons for different types of posts -->
+          <div class="postIcons">
+            <button>
+              <img src="./Images/image_logo.png" alt="Image Logo" /><span
+                >Photo</span
+              >
+            </button>
+            <button>
+              <img src="./Images/video_logo.png" alt="Video Logo" /><span
+                >Video</span
+              >
+            </button>
+            <button>
+              <img src="./Images/event_logo.png" alt="Event Logo" /><span
+                >Event</span
+              >
+            </button>
+            <button>
+              <img src="./Images/artical_logo.jpg" alt="Artical Logo" /><span
+                >Write Artical</span
+              >
+            </button>
+          </div>
+        </div>
+        <!-- User posts section -->
+        <div class="section-2">
+          <!-- First user post -->
+          <div class="User-post">
+            <div class="Profile-Info">
+              <div>
+                <img src="./Images/myntra_logo.png" alt="Myntra Logo" />
+              </div>
+              <div>
+                <div class="myntra-name">Myntra Fashion</div>
+                <div class="followers">792,456 Followers</div>
+                <div class="promoted">Promoted</div>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <!-- Myntra post image -->
+          <img
+            src="./Images/myntra_post.avif"
+            class="myntra-post"
+            alt="Myntra Post"
+          />
+          <!-- Reactions section -->
+          <div class="emojis">
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt"
+              alt="Thamps up emoji"
+            />
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/lhxmwiwoag9qepsh4nc28zus"
+              alt="idea emoji"
+            />
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+              alt="hand clap emoji"
+            />
+            <span>20 . Comments</span>
+          </div>
+          <!-- Like, comment, share, and send options -->
+          <div class="like-commnets">
+            <div><i class="fa-regular fa-thumbs-up"></i><span>Like</span></div>
+            <div>
+              <i class="fa-regular fa-comment-dots"></i><span>Comment</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-share-from-square"></i><span>Share</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-paper-plane"></i><span>Send</span>
+            </div>
+          </div>
+        </div>
+        <!-- Second user post -->
+        <div class="section-3">
+          <div class="User-post">
+            <div class="Profile-Info">
+              <div>
+                <img src="./Images/amazon_logo.jpg" alt="Amazon Logo" />
+              </div>
+              <div>
+                <div class="myntra-name">Amazon</div>
+                <div class="followers">10 Million - Followers</div>
+                <div class="promoted">Promoted</div>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <!-- Amazon post information and video -->
+          <div class="post-info">
+            Amazon is a global e-commerce and technology company known for its
+            vast online marketplace, cloud computing services (AWS), and
+            innovations in AI and logistics. It continues to revolutionize
+            shopping and entertainment, offering everything from groceries to
+            streaming services.
+          </div>
+          <video
+            src="./Videos/amazon-video.mp4"
+            width="100%"
+            autoplay="autoplay"
+            controls
+          ></video>
+          <!-- Reactions section -->
+          <div class="emojis">
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt"
+              alt="Thamps up emoji"
+            />
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/lhxmwiwoag9qepsh4nc28zus"
+              alt="idea emoji"
+            />
+            <img
+              src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+              alt="hand clap emoji"
+            />
+            <span>20 . Comments</span>
+          </div>
+          <!-- Like, comment, share, and send options -->
+          <div class="like-commnets">
+            <div><i class="fa-regular fa-thumbs-up"></i><span>Like</span></div>
+            <div>
+              <i class="fa-regular fa-comment-dots"></i><span>Comment</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-share-from-square"></i><span>Share</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-paper-plane"></i><span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right panel with ads, people suggestions, and news -->
+      <div class="right-panel">
+        <!-- Section for LinkedIn News -->
+        <div class="section-1">
+          <div class="notifications">
+            <div class="news-heading">LinkedIn News</div>
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <!-- List of news items -->
+          <ul class="news-list">
+            <!-- First news item -->
+            <li class="news-item">
+              <div class="news-Info">Indian crosses 3,58,974 daily cases</div>
+              <div class="news-timestamp">10h ago - 5,043 readers</div>
+            </li>
+            <!-- Second news item -->
+            <li class="news-item">
+              <div class="news-Info">Zomato files for $1.18 IPO</div>
+              <div class="news-timestamp">13h ago - 52,043 readers</div>
+            </li>
+            <!-- Third news item -->
+            <li class="news-item">
+              <div class="news-Info">Jobs pay ,in IT soar</div>
+              <div class="news-timestamp">1d ago - 7865 readers</div>
+            </li>
+            <!-- Fourth news item -->
+            <li class="news-item">
+              <div class="news-Info">Google saving $1B a year from WFH</div>
+              <div class="news-timestamp">2d ago - 7865 readers</div>
+            </li>
+          </ul>
+        </div>
+        <!-- Section for most viewed courses -->
+        <div class="section-2">
+          <div class="notifications">
+            <!-- Heading for the most viewed courses section -->
+            <div class="news-heading">Today's most viewed courses</div>
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <!-- List of course items -->
+          <ul class="news-list">
+            <!-- First course item -->
+            <li class="news-item">
+              <div class="news-Info">Indian crosses 3,58,974 daily cases</div>
+              <div class="news-timestamp">Top news 9874 - reviews</div>
+            </li>
+            <!-- Second course item -->
+            <li class="news-item">
+              <div class="news-Info">Indian crosses 3,58,974 daily cases</div>
+              <div class="news-timestamp">Top news 9874 - reviews</div>
+            </li>
+          </ul>
+        </div>
+        <!-- Section for adding to your feed -->
+        <div class="section-3">
+          <div class="notifications">
+            <!-- Heading for the "Add to your feed" section -->
+            <div class="news-heading">Add to your feed</div>
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <!-- Feed item: Unilever -->
+          <div class="your-feed">
+            <!-- Unilever logo -->
+            <div class="unilever-logo">
+              <img src="./Images/unilever_logo.svg" alt="Unilever Logo" />
+            </div>
+            <!-- Information about Unilever -->
+            <div class="logo-Info">
+              <div class="logo-name">Unilever</div>
+              <div class="company-Info">Company - Consumer Goods</div>
+              <button type="button">+ Follow</button>
+            </div>
+          </div>
+          <!-- Feed item: LinkedIn -->
+          <div class="your-feed">
+            <div class="unilever-logo">
+              <img src="./Images/LinkedIn_logo.webp" alt="LinkedIn Logo" />
+            </div>
+            <!-- Information about LinkedIn -->
+            <div class="logo-Info">
+              <div class="logo-name">LinkedIn</div>
+              <div class="company-Info">Company - Internet</div>
+              <button type="button">+ Follow</button>
+            </div>
+          </div>
+          <!-- Feed item: Myntra -->
+          <div class="your-feed">
+            <div class="unilever-logo">
+              <img src="./Images/myntra_logo.png" alt="Myntra Logo" />
+            </div>
+            <!-- Information about Myntra -->
+            <div class="logo-Info">
+              <div class="logo-name">Myntra</div>
+              <div class="company-Info">Company - Internet</div>
+              <!-- Follow button -->
+              <button type="button">+ Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
